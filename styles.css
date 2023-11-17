@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+
+header {
+
+    background-color: lightgray;
+
+}
+
+main section.I {
+
+    background-color: lightcoral;
+
+}
+
+main section.Geophysics {
+
+    background-color: lightgreen;
+
+}
+
+main section.ds {
+
+    background-color: lightblue;
+
+}
+
+main section.study {
+
+    background-color: lightsalmon;
+
+}
+
+footer {
+
+    background-color: aquamarine;
+    
+}
