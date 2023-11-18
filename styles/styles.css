@@ -1,11 +1,11 @@
-@charset "UTF-8";
+@import './variables.css';
+@import './globals.css';
+
+@import './elements/header.css';
+@import './elements/main.css';
+@import './elements/footer.css';
 
 
-header {
-
-    background-color: lightgray;
-
-}
 
 main section.I {
 

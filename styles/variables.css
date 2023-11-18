@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+
+    --primary-color: #0084d9;
+    --secondary-color: #47c3f9;
+    --warning-color: #f98700;
+    --warning-light-color: #ffa800;
+    --primary-font: 'Helvetiva', sans-serif;
+}
