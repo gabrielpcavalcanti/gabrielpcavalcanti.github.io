@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gabriel Cavalcanti · Aulas de Matemática e Física</title>
+<meta name="description" content="Aulas particulares de Matemática e Física com Gabriel Cavalcanti, geofísico formado pela UnB.">
+<meta name="theme-color" content="#12192e">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gabriel Cavalcanti · Aulas de Matemática e Física">
+<meta property="og:description" content="Exatas sem sofrimento. Agende sua aula pelo WhatsApp.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="#inicio">Gabriel <span>Cavalcanti</span></a>
+  <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
+  <nav class="nav">
+    <a href="#servicos">Aulas</a>
+    <a href="#sobre">Sobre</a>
+    <a class="btn btn-gold" href="#contato" data-wa>Agendar aula</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Aulas de Matemática e Física</p>
+      <h1>Exatas <span class="grad">sem sofrimento.</span></h1>
+      <p class="lead">Explicações claras, no seu ritmo, com exemplos que fazem sentido. Bora destravar essa matéria?</p>
+      <div class="actions">
+        <a class="btn btn-gold" href="#contato" data-wa>Agendar pelo WhatsApp</a>
+        <a class="btn btn-ghost" href="#servicos">Ver as aulas</a>
+      </div>
+    </div>
+    <div class="sim">
+      <canvas id="sim" width="360" height="230" aria-label="Simulador de lançamento"></canvas>
+      <p class="sim-title">Física na prática: lance a bolinha 👇</p>
+      <label>Ângulo <b id="angv">45°</b><input id="ang" type="range" min="10" max="80" value="45"></label>
+      <label>Velocidade <b id="velv">20 m/s</b><input id="vel" type="range" min="8" max="30" value="20"></label>
+      <button id="launch" class="btn btn-gold">Lançar! 🚀</button>
+      <p id="res" class="res"></p>
+    </div>
+  </div>
+  <span class="formula f1" aria-hidden="true">E = mc²</span>
+  <span class="formula f2" aria-hidden="true">∫ f(x) dx</span>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track"><span>Funções</span><span>Geometria</span><span>Cinemática</span><span>Eletromagnetismo</span><span>Derivadas</span><span>Ondas</span><span>Trigonometria</span><span>Termodinâmica</span><span>Funções</span><span>Geometria</span><span>Cinemática</span><span>Eletromagnetismo</span><span>Derivadas</span><span>Ondas</span><span>Trigonometria</span><span>Termodinâmica</span></div></div>
+
+<section class="section" id="servicos">
+  <div class="wrap">
+    <h2>O que a gente pode estudar</h2>
+    <p class="section-sub">Escolha a área e eu monto o plano com você.</p>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="icon">∑</div>
+        <h3>Matemática</h3>
+        <ul><li>Ensino fundamental e médio</li><li>Reforço e preparação para provas</li><li>Vestibular e ENEM</li><li>Cálculo e ensino superior</li></ul>
+        <a href="#contato" data-wa data-msg="Olá, Gabriel! Tenho interesse em aulas de Matemática.">Quero aula de Matemática →</a>
+      </article>
+      <article class="card reveal">
+        <div class="icon">⚛</div>
+        <h3>Física</h3>
+        <ul><li>Ensino médio</li><li>Reforço e preparação para provas</li><li>Vestibular e ENEM</li><li>Física básica no ensino superior</li></ul>
+        <a href="#contato" data-wa data-msg="Olá, Gabriel! Tenho interesse em aulas de Física.">Quero aula de Física →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="sobre">
+  <div class="wrap about">
+    <div class="photo reveal" role="img" aria-label="Foto de Gabriel Cavalcanti"><span>GC</span></div>
+    <div class="reveal">
+      <h2>Oi, eu sou o Gabriel 👋</h2>
+      <p>Sou professor de Matemática e Física e geofísico formado pela UnB. Na Geofísica, matemática e física viram ferramentas para entender a Terra.</p>
+      <p>É essa ideia que levo para as aulas: mostrar para que serve cada conteúdo, e não só como resolver a conta.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contato">
+  <div class="wrap">
+    <h2>Em que posso te ajudar?</h2>
+    <p>Toque numa opção e chame no WhatsApp. A mensagem já vai pronta.</p>
+    <div class="chips">
+      <button class="chip" data-msg="Tenho uma prova chegando.">📝 Tenho prova chegando</button>
+      <button class="chip" data-msg="Quero me preparar para vestibular/ENEM.">🎯 Vestibular / ENEM</button>
+      <button class="chip" data-msg="Preciso de reforço na matéria.">🧩 Preciso de reforço</button>
+      <button class="chip" data-msg="Quero estudar Cálculo.">🚀 Quero ver Cálculo</button>
+    </div>
+    <a id="cta-wa" class="btn btn-gold" href="#contato" data-wa>Falar no WhatsApp</a>
+  </div>
+</section>
+</main>
+
+<a class="wa-float btn btn-gold" href="#contato" data-wa>💬 Agendar pelo WhatsApp</a>
+<footer class="footer">© <span id="ano"></span> Gabriel Cavalcanti · Matemática e Física</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
