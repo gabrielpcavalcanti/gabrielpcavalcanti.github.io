@@ -302,3 +302,11 @@ body{padding-bottom:84px}
   transform:scale(1.12);transform-origin:center bottom;
 }
 .photo img{object-position:top}
+.faq-list{max-width:720px;margin:0 auto 32px;text-align:left}
+.faq details{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:14px;margin-bottom:10px;overflow:hidden}
+.faq details[open]{border-color:var(--acc2)}
+.faq summary{list-style:none;cursor:pointer;padding:16px 48px 16px 18px;font-weight:600;font-size:16px;position:relative;color:var(--on-dark)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:22px;color:var(--acc2);transition:transform .2s}
+.faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.faq details p{margin:0;padding:0 18px 18px;color:var(--on-dark-soft)}

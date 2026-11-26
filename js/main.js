@@ -42,15 +42,3 @@ document.getElementById("ano").textContent = new Date().getFullYear();
 const flutuante = document.querySelector(".wa-float");
 const fim = document.getElementById("contato");
 new IntersectionObserver(([e]) => flutuante.classList.toggle("hide", e.isIntersecting)).observe(fim);
-
-// ===== Escolha de assunto -> mensagem pronta no WhatsApp =====
-(() => {
-  const cta = document.getElementById("cta-wa");
-  document.querySelectorAll(".chip").forEach((chip) => {
-    chip.addEventListener("click", () => {
-      document.querySelectorAll(".chip").forEach((c) => c.classList.remove("active"));
-      chip.classList.add("active");
-      cta.href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent("Olá, Gabriel! " + chip.dataset.msg)}`;
-    });
-  });
-})();
