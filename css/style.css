@@ -226,7 +226,7 @@ body[data-tema="caderno"] h2{font-size:clamp(32px,5vw,46px)}
 .hero{
   position:relative;overflow:hidden;color:var(--on-hero);padding:110px 0 120px;
   background:
-    url("../img/fundo.jpg") center/cover no-repeat,
+    url("../img/fundo.png") center/cover no-repeat,
     var(--hero);
 }
 .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1fr;gap:40px;align-items:center}
