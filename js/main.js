@@ -1,6 +1,6 @@
 // ===== CONFIGURAÇÃO =====
 // Número com código do país e DDD, só dígitos. Ex.: 5561999999999
-const WHATSAPP = "55SEUNUMEROAQUI";
+const WHATSAPP = "5561991733346";
 const MENSAGEM_PADRAO = "Olá, Gabriel! Quero agendar uma aula.";
 // ========================
 

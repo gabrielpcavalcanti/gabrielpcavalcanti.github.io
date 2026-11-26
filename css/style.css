@@ -225,9 +225,14 @@ body[data-tema="caderno"] h2{font-size:clamp(32px,5vw,46px)}
 .menu-btn{display:none;background:none;border:0;color:var(--on-dark);font-size:26px;cursor:pointer}
 .hero{
   position:relative;overflow:hidden;color:var(--on-hero);padding:110px 0 120px;
-  background:
-    url("../img/fundo.png") center/cover no-repeat,
-    var(--hero);
+  background:var(--hero);
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:url("../img/fundo.png") center/cover no-repeat;
+  opacity:.2;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 70%);
+  mask-image:linear-gradient(90deg,transparent 0%,#000 70%);
 }
 .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1fr;gap:40px;align-items:center}
 .eyebrow{color:var(--hero-accent);letter-spacing:.15em;text-transform:uppercase;font-size:13px;font-weight:600;margin:0 0 16px}
@@ -288,3 +293,12 @@ body[data-tema="caderno"] h2{font-size:clamp(32px,5vw,46px)}
 body{padding-bottom:84px}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+@media(max-width:720px){
+  .hero::before{opacity:.2;-webkit-mask-image:none;mask-image:none}
+}
+.photo{overflow:hidden}
+.photo img{
+  width:95%;height:100%;object-fit:cover;display:block;
+  transform:scale(1.12);transform-origin:center bottom;
+}
+.photo img{object-position:top}
