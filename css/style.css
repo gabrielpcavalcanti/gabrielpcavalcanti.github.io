@@ -290,7 +290,7 @@ body[data-tema="caderno"] h2{font-size:clamp(32px,5vw,46px)}
 .chip{flex:1 1 100%;text-align:left}
 .wa-float{display:block;position:fixed;left:16px;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.35);transition:opacity .25s,transform .25s}
 .wa-float.hide{opacity:0;pointer-events:none;transform:translateY(20px)}
-body{padding-bottom:84px}
+.footer{padding-bottom:calc(90px + env(safe-area-inset-bottom,0px))}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 @media(max-width:720px){
